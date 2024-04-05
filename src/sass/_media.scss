@@ -1,0 +1,11 @@
+@media (max-width: 325px) {
+	@keyframes navItemsAnimation {
+		from {
+			transform: translateY(230%);
+		}
+
+		to {
+			transform: translateY(0);
+		}
+	}
+}

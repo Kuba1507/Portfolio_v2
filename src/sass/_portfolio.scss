@@ -83,11 +83,13 @@ body {
 			list-style-type: none;
 
 			&-item {
+				margin: 1em 0;
 				padding: 1em;
 				font-family: "Poppins", sans-serif;
-				font-size: 2.2rem;
+				font-size: 2rem;
 
 				&-link {
+					padding: 1em 10em;
 					color: $dark;
 					text-decoration: none;
 				}
@@ -108,7 +110,7 @@ body {
 
 @keyframes navItemsAnimation {
 	from {
-		transform: translateY(300%);
+		transform: translateY(350%);
 	}
 
 	to {
