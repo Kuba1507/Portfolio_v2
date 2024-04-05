@@ -64,6 +64,18 @@ body {
 					text-decoration: none;
 				}
 			}
+
+			&__call-button {
+				display: none;
+				padding: 0.4em 1.4em;
+				font-family: "Poppins", sans-serif;
+				font-size: 1.6rem;
+				color: $bg-color;
+				background-color: $theme-dark;
+				border: none;
+				border-radius: 32px;
+				cursor: pointer;
+			}
 		}
 	}
 

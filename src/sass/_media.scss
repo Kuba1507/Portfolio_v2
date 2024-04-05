@@ -9,3 +9,23 @@
 		}
 	}
 }
+
+@media (min-width: 768px) {
+	.header {
+		.wrapper {
+			.navbar {
+				&__menu {
+					display: block;
+				}
+
+				.hamburger {
+					display: none;
+				}
+
+				&__call-button {
+					display: block;
+				}
+			}
+		}
+	}
+}
