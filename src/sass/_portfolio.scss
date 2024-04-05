@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 *,
 *::before,
 *::after {
@@ -14,10 +16,31 @@ html {
 
 body {
 	font-size: 1.6rem;
-	// background-color: $bg-color;
+	background-color: $bg-color;
 }
 
 .wrapper {
 	margin: 0 auto;
-	width: min(100%, 1200px);
+	width: min(100%, 1300px);
+}
+
+//header
+.header {
+	.wrapper {
+		.navbar {
+			margin: 1em;
+			padding: 1em;
+			border-radius: 32px;
+			background-color: $navbar-bg;
+
+			&__logo {
+				padding: 0.75em 0.5em;
+				font-family: "Titillium Web", sans-serif;
+				font-size: 1.7rem;
+				font-weight: 700;
+				color: $dark;
+				text-decoration: none;
+			}
+		}
+	}
 }
