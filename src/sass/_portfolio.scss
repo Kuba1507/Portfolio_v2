@@ -168,7 +168,7 @@ body {
 				// background-color: aquamarine;
 
 				&__trapezoid {
-					height: 250px;
+					height: 230px;
 					max-width: 370px;
 					width: 85%;
 					background: rgb(1, 124, 140);
@@ -189,8 +189,38 @@ body {
 			}
 
 			.right-side {
+				margin-top: 1em;
 				flex: 1;
-				background-color: bisque;
+				// background-color: bisque;
+
+				.main-heading {
+					font-size: 3.8rem;
+					font-family: "Titillium Web", sans-serif;
+					font-weight: 900;
+					color: transparent;
+					-webkit-text-stroke: 1px #203c61;
+					text-align: center;
+
+					span {
+						-webkit-text-stroke: 0;
+						color: transparent;
+						background: linear-gradient(
+							190deg,
+							rgba(1, 124, 140, 1) 20%,
+							rgba(16, 165, 160, 1) 65%,
+							rgba(35, 214, 185, 1) 100%
+						);
+						-webkit-background-clip: text;
+						background-clip: text;
+					}
+				}
+
+				.main-description {
+					padding: 0 2em;
+					font-family: "Poppins", sans-serif;
+					color: $dark;
+					text-align: center;
+				}
 			}
 		}
 	}
