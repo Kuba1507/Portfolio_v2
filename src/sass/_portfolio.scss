@@ -27,7 +27,12 @@ body {
 
 //header
 .header {
+	position: relative;
+
 	.wrapper {
+		position: relative;
+		z-index: 999;
+
 		.navbar {
 			display: flex;
 			justify-content: space-between;
@@ -60,5 +65,53 @@ body {
 				}
 			}
 		}
+	}
+
+	.mobile-nav {
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		height: 100vh;
+		width: 100%;
+		transform: translateY(-100%);
+		transition: transform 0.8s;
+		background-color: $theme-light;
+
+		&__menu {
+			list-style-type: none;
+
+			&-item {
+				padding: 1em;
+				font-family: "Poppins", sans-serif;
+				font-size: 2.2rem;
+
+				&-link {
+					color: $dark;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.show-mobile-nav {
+		transform: translateY(0);
+	}
+
+	.nav-items-animation {
+		animation: navItemsAnimation 1.5s both;
+	}
+}
+
+// animations
+
+@keyframes navItemsAnimation {
+	from {
+		transform: translateY(300%);
+	}
+
+	to {
+		transform: translateY(0);
 	}
 }
