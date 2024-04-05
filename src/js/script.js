@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const burgerBtn = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
 const mobileNavItems = document.querySelectorAll(".mobile-nav__menu-item");
@@ -7,11 +8,13 @@ const handleNav = () => {
 	handleBurgerAnimation();
 	handleNavItemsAnimation();
 	deleteAnimation();
+	// blockScroll();
 };
 
 const closeNav = () => {
 	burgerBtn.classList.remove("is-active");
 	mobileNav.classList.remove("show-mobile-nav");
+	body.classList.remove("block-scroll");
 };
 
 const handleBurgerAnimation = () => {
@@ -37,6 +40,10 @@ const deleteAnimation = () => {
 		});
 	});
 };
+
+// const blockScroll = () => {
+// 	body.classList.add("block-scroll");
+// };
 
 burgerBtn.addEventListener("click", handleNav);
 mobileNavItems.forEach((item) => {

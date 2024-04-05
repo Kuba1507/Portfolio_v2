@@ -25,17 +25,20 @@ body {
 	width: min(100%, 1300px);
 }
 
-//header
+.block-scroll {
+	overflow-y: hidden;
+}
+
 .header {
 	position: fixed;
 	width: 100%;
+	z-index: 999;
 
 	.wrapper {
 		position: relative;
 		z-index: 999;
 
 		.navbar {
-			// position: fixed;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -142,7 +145,56 @@ body {
 	}
 }
 
-// animations
+.main {
+	.section {
+		padding: 2em 1em;
+	}
+
+	.welcome-section {
+		padding-top: 8em;
+
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			// height: 800px;
+			width: 100%;
+			// background-color: aqua;
+
+			.left-side {
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				flex: 1;
+				// background-color: aquamarine;
+
+				&__trapezoid {
+					height: 250px;
+					max-width: 370px;
+					width: 85%;
+					background: rgb(1, 124, 140);
+					background: linear-gradient(
+						225deg,
+						rgba(1, 124, 140, 1) 20%,
+						rgba(16, 165, 160, 1) 65%,
+						rgba(35, 214, 185, 1) 100%
+					);
+					border-radius: 12px;
+					clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+				}
+
+				&__avatar {
+					position: absolute;
+					height: 270px;
+				}
+			}
+
+			.right-side {
+				flex: 1;
+				background-color: bisque;
+			}
+		}
+	}
+}
 
 @keyframes navItemsAnimation {
 	from {

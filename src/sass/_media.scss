@@ -10,6 +10,46 @@
 	}
 }
 
+@media (min-width: 350px) {
+	.main {
+		.welcome-section {
+			padding-top: 10em;
+
+			.wrapper {
+				.left-side {
+					&__trapezoid {
+						height: 280px;
+					}
+
+					&__avatar {
+						height: 300px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 450px) {
+	.main {
+		.welcome-section {
+			padding-top: 10em;
+
+			.wrapper {
+				.left-side {
+					&__trapezoid {
+						height: 320px;
+					}
+
+					&__avatar {
+						height: 360px;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.header {
 		.wrapper {
