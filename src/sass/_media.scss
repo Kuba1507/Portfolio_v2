@@ -29,3 +29,32 @@
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	.header {
+		.wrapper {
+			.navbar {
+				height: 70px;
+				border-radius: 40px;
+
+				&__logo {
+					padding: 0.75em 1em;
+					// font-size: 2rem;
+				}
+
+				&__menu {
+					&-item {
+						padding: 1em 1.25em;
+						// font-size: 1.9rem;
+					}
+				}
+
+				&__call-button {
+					margin-right: 0.5em;
+					// padding: 0.6em 1.8em;
+					// font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}

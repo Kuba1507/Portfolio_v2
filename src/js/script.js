@@ -9,6 +9,11 @@ const handleNav = () => {
 	deleteAnimation();
 };
 
+const closeNav = () => {
+	burgerBtn.classList.remove("is-active");
+	mobileNav.classList.remove("show-mobile-nav");
+};
+
 const handleBurgerAnimation = () => {
 	burgerBtn.classList.toggle("is-active");
 };
@@ -34,3 +39,6 @@ const deleteAnimation = () => {
 };
 
 burgerBtn.addEventListener("click", handleNav);
+mobileNavItems.forEach((item) => {
+	item.addEventListener("click", closeNav);
+});
