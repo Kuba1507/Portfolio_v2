@@ -150,6 +150,10 @@ body {
 		padding: 2em 1em;
 	}
 
+	.wrapper {
+		width: min(100%, 1100px);
+	}
+
 	.welcome-section {
 		padding-top: 8em;
 
@@ -157,7 +161,6 @@ body {
 			display: flex;
 			flex-direction: column;
 			// height: 800px;
-			width: 100%;
 			// background-color: aqua;
 
 			.left-side {

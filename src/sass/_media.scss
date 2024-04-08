@@ -125,4 +125,50 @@
 			}
 		}
 	}
+
+	.main {
+		.welcome-section {
+			.wrapper {
+				flex-direction: row;
+
+				.left-side {
+					justify-content: flex-end;
+					order: 1;
+				}
+
+				.right-side {
+					align-items: flex-start;
+
+					.main-heading {
+						font-size: 5rem;
+					}
+
+					.main-description {
+						margin-top: 0.5em;
+						text-align: left;
+						padding: 0;
+					}
+
+					&__attributes {
+						margin-top: 1.5em;
+
+						&-attribute {
+							padding: 0 2em 0 0;
+						}
+					}
+
+					&__socials {
+						&-button {
+							margin: 0 2em 0 0;
+						}
+					}
+
+					&__cta-button {
+						width: 40%;
+						margin-top: 2.5em;
+					}
+				}
+			}
+		}
+	}
 }
