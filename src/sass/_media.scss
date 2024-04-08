@@ -128,7 +128,12 @@
 
 	.main {
 		.section {
-			padding: 8em 1em;
+			padding: 6em 1em;
+		}
+
+		.section-title {
+			margin: 0;
+			font-size: 3rem;
 		}
 
 		.welcome-section {
@@ -181,6 +186,28 @@
 						width: 220px;
 						margin-top: 3em;
 					}
+				}
+			}
+		}
+
+		.about-me {
+			.wrapper {
+				flex-direction: row;
+				align-items: center;
+
+				.photo-box {
+					display: flex;
+					justify-content: flex-start;
+					flex: 1;
+
+					&__image {
+						width: 270px;
+						height: 270px;
+					}
+				}
+
+				.text-box {
+					flex: 2;
 				}
 			}
 		}

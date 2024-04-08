@@ -320,29 +320,34 @@ body {
 		background-color: $navbar-bg;
 		// background-color: red;
 
-		.photo-box {
+		.wrapper {
 			display: flex;
-			justify-content: center;
-			// background-color: blue;
+			flex-direction: column;
 
-			&__image {
-				width: 200px;
-				height: 200px;
-				background-image: url("../img/example.jpg");
-				background-size: cover;
-				background-position: center;
-				border-radius: 50%;
+			.photo-box {
+				display: flex;
+				justify-content: center;
+				// background-color: blue;
+
+				&__image {
+					width: 200px;
+					height: 200px;
+					background-image: url("../img/example.jpg");
+					background-size: cover;
+					background-position: center;
+					border-radius: 50%;
+				}
 			}
-		}
 
-		.text-box {
-			&__description {
-				padding: 0 2em;
-				margin-top: 1em;
-				font-family: "Poppins", sans-serif;
-				font-size: 1.5rem;
-				color: $dark;
-				text-align: center;
+			.text-box {
+				&__description {
+					padding: 0 2em;
+					margin-top: 1em;
+					font-family: "Poppins", sans-serif;
+					font-size: 1.5rem;
+					color: $dark;
+					text-align: center;
+				}
 			}
 		}
 	}
