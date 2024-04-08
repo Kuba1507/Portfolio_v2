@@ -127,7 +127,13 @@
 	}
 
 	.main {
+		.section {
+			padding: 8em 1em;
+		}
+
 		.welcome-section {
+			padding-top: 10em;
+
 			.wrapper {
 				flex-direction: row;
 

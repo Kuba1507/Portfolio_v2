@@ -146,12 +146,21 @@ body {
 }
 
 .main {
-	.section {
-		padding: 2em 1em;
-	}
-
 	.wrapper {
 		width: min(100%, 1100px);
+	}
+
+	.section {
+		padding: 3em 1em;
+	}
+
+	.section-title {
+		margin-top: 1em;
+		font-family: "Titillium Web", sans-serif;
+		font-weight: 600;
+		font-size: 2.6rem;
+		color: $darker;
+		text-align: center;
 	}
 
 	.welcome-section {
@@ -302,6 +311,38 @@ body {
 						rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 					cursor: pointer;
 				}
+			}
+		}
+	}
+
+	.about-me {
+		display: flex;
+		background-color: $navbar-bg;
+		// background-color: red;
+
+		.photo-box {
+			display: flex;
+			justify-content: center;
+			// background-color: blue;
+
+			&__image {
+				width: 200px;
+				height: 200px;
+				background-image: url("../img/example.jpg");
+				background-size: cover;
+				background-position: center;
+				border-radius: 50%;
+			}
+		}
+
+		.text-box {
+			&__description {
+				padding: 0 2em;
+				margin-top: 1em;
+				font-family: "Poppins", sans-serif;
+				font-size: 1.5rem;
+				color: $dark;
+				text-align: center;
 			}
 		}
 	}
