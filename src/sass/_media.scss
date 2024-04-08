@@ -66,6 +66,36 @@
 			}
 		}
 	}
+
+	.main {
+		.welcome-section {
+			.wrapper {
+				.right-side {
+					.main-heading {
+						font-size: 4.4rem;
+					}
+
+					.main-description {
+						padding: 0 5em;
+						font-size: 1.5rem;
+					}
+
+					&__attributes {
+						font-size: 1.4rem;
+					}
+
+					&__socials {
+						margin-top: 1.5em;
+					}
+
+					&__cta-button {
+						margin-top: 2.75em;
+						width: 70%;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
