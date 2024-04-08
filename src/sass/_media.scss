@@ -134,6 +134,14 @@
 				.left-side {
 					justify-content: flex-end;
 					order: 1;
+
+					&__trapezoid {
+						height: 340px;
+					}
+
+					&__avatar {
+						height: 380px;
+					}
 				}
 
 				.right-side {
@@ -164,8 +172,8 @@
 					}
 
 					&__cta-button {
-						width: 40%;
-						margin-top: 2.5em;
+						width: 220px;
+						margin-top: 3em;
 					}
 				}
 			}
