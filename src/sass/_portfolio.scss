@@ -46,7 +46,8 @@ body {
 			padding: 0.5em 1em;
 			height: 60px;
 			border-radius: 32px;
-			background-color: $navbar-bg;
+			backdrop-filter: blur(6px);
+			background-color: rgba(245, 245, 245, 0.8);
 
 			&__logo {
 				padding: 0.75em 0.5em;
@@ -291,7 +292,12 @@ body {
 						background-color: $theme-dark;
 						border: none;
 						border-radius: 50%;
+						transition: background-color 0.3s;
 						cursor: pointer;
+
+						&:hover {
+							background-color: $theme-light;
+						}
 
 						&-icon {
 							width: 20px;
@@ -313,11 +319,18 @@ body {
 					font-size: 1.8rem;
 					color: $bg-color;
 					background-color: $theme-dark;
-					border: none;
+					border: 1px solid transparent;
 					border-radius: 25px;
 					box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 						rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+					transition: color 0.3s, background-color 0.3s, border 0.3s;
 					cursor: pointer;
+
+					&:hover {
+						color: $theme-dark;
+						background-color: $bg-color;
+						border: 1px solid $theme-dark;
+					}
 				}
 			}
 		}
