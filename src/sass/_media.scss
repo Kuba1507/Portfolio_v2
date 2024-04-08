@@ -95,6 +95,16 @@
 				}
 			}
 		}
+
+		.benefits {
+			.wrapper {
+				.benefits-box {
+					flex-direction: row;
+					justify-content: space-between;
+					margin-top: 4em;
+				}
+			}
+		}
 	}
 }
 
