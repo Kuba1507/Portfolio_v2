@@ -378,6 +378,7 @@ body {
 	}
 
 	.benefits {
+		position: relative;
 		// background-color: lime;
 
 		.wrapper {
@@ -414,6 +415,22 @@ body {
 						text-align: center;
 					}
 				}
+			}
+		}
+
+		&__decoration {
+			position: absolute;
+			display: none;
+			width: 300px;
+
+			&--left {
+				bottom: 0;
+				left: -10%;
+			}
+
+			&--right {
+				top: 50px;
+				right: -9%;
 			}
 		}
 	}

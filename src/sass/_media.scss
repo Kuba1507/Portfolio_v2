@@ -220,5 +220,28 @@
 				}
 			}
 		}
+
+		.benefits {
+			.wrapper {
+				.benefits-box {
+					margin-top: 5em;
+
+					&__benefit {
+						&-icon {
+							width: 40px;
+							height: 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	.benefits {
+		.benefits__decoration {
+			display: block;
+		}
 	}
 }
