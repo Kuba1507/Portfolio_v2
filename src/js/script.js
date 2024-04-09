@@ -2,6 +2,9 @@ const body = document.querySelector("body");
 const burgerBtn = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
 const mobileNavItems = document.querySelectorAll(".mobile-nav__menu-item");
+const portfolioElements = document.querySelectorAll(
+	".portfolio-box__element-image"
+);
 
 const handleNav = () => {
 	mobileNav.classList.toggle("show-mobile-nav");
@@ -49,7 +52,18 @@ const handleScroll = () => {
 	}
 };
 
+function handleWebsite() {
+	const url = this.getAttribute("data-url");
+
+	if (url) {
+		window.open(url, "_blank");
+	}
+}
+
 burgerBtn.addEventListener("click", handleNav);
 mobileNavItems.forEach((item) => {
 	item.addEventListener("click", closeNav);
+});
+portfolioElements.forEach((element) => {
+	element.addEventListener("click", handleWebsite);
 });
