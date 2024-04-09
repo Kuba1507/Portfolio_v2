@@ -8,13 +8,13 @@ const handleNav = () => {
 	handleBurgerAnimation();
 	handleNavItemsAnimation();
 	deleteAnimation();
-	// blockScroll();
+	handleScroll();
 };
 
 const closeNav = () => {
 	burgerBtn.classList.remove("is-active");
 	mobileNav.classList.remove("show-mobile-nav");
-	body.classList.remove("block-scroll");
+	handleScroll();
 };
 
 const handleBurgerAnimation = () => {
@@ -41,9 +41,13 @@ const deleteAnimation = () => {
 	});
 };
 
-// const blockScroll = () => {
-// 	body.classList.add("block-scroll");
-// };
+const handleScroll = () => {
+	if (burgerBtn.classList.contains("is-active")) {
+		body.classList.add("block-scroll");
+	} else {
+		body.classList.remove("block-scroll");
+	}
+};
 
 burgerBtn.addEventListener("click", handleNav);
 mobileNavItems.forEach((item) => {
