@@ -172,6 +172,14 @@ body {
 		text-align: center;
 	}
 
+	.section-tip {
+		margin-top: 0.75em;
+		width: 100%;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
 	.welcome-section {
 		padding-top: 8em;
 
@@ -471,6 +479,10 @@ body {
 						transform-origin: bottom center;
 						transition: transform 0.3s ease-out, width 0.3s ease-in;
 						width: 80%;
+					}
+
+					&--last {
+						margin-bottom: 1em;
 					}
 				}
 
