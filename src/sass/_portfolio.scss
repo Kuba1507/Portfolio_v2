@@ -467,8 +467,15 @@ body {
 						left: 50%;
 						bottom: -30px;
 						transform: translateX(-50%) rotate(-4deg);
+						transform-origin: bottom center;
+						transition: transform 0.3s ease-out, width 0.3s ease-in;
 						width: 80%;
 					}
+				}
+
+				.portfolio-box__element:hover .portfolio-box__element-image {
+					transform: translateX(-50%) rotate(0);
+					width: 90%;
 				}
 			}
 		}
