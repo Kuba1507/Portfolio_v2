@@ -586,8 +586,10 @@ body {
 
 					&-name {
 						margin-top: 0.5em;
-						margin-bottom: 3em;
+						margin-bottom: 2em;
 						font-family: "Poppins", sans-serif;
+						font-size: 1.7rem;
+						text-transform: uppercase;
 						color: $dark;
 					}
 				}
@@ -599,6 +601,12 @@ body {
 
 			.swiper-button-prev {
 				display: none;
+			}
+
+			.swiper-pagination-bullet {
+				width: 30px;
+				border-radius: 8px;
+				background-color: $theme-dark;
 			}
 		}
 	}
