@@ -540,8 +540,69 @@ body {
 			}
 		}
 	}
-}
 
+	.comments {
+		background-color: $navbar-bg;
+
+		.wrapper {
+			display: flex;
+			justify-content: center;
+
+			.swiper {
+				width: 100%;
+				padding: 2em 0;
+			}
+
+			.swiper-slide {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background-color: $navbar-bg;
+
+				&__quotes {
+					width: 80px;
+					height: 60px;
+				}
+
+				&__content {
+					margin-top: 1.5em;
+					padding: 0 2em;
+					max-width: 550px;
+					font-family: "Poppins", sans-serif;
+					font-size: 1.7rem;
+					color: $darker;
+					text-align: center;
+				}
+
+				&__author {
+					margin-top: 3em;
+					width: 55px;
+					height: 55px;
+					background-image: url("../img/example.jpg");
+					background-position: center;
+					background-size: cover;
+					border-radius: 50%;
+
+					&-name {
+						margin-top: 0.5em;
+						margin-bottom: 3em;
+						font-family: "Poppins", sans-serif;
+						color: $dark;
+					}
+				}
+			}
+
+			.swiper-button-next {
+				display: none;
+			}
+
+			.swiper-button-prev {
+				display: none;
+			}
+		}
+	}
+}
 @keyframes navItemsAnimation {
 	from {
 		transform: translateY(330%);
