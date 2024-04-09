@@ -235,6 +235,20 @@
 				}
 			}
 		}
+
+		.portfolio {
+			.wrapper {
+				.portfolio-box {
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;
+
+					&__element {
+						margin: 0 3em 3em 0;
+					}
+				}
+			}
+		}
 	}
 }
 
