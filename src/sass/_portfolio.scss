@@ -497,6 +497,49 @@ body {
 			}
 		}
 	}
+
+	.features {
+		.wrapper {
+			.features-box {
+				margin-top: 3em;
+
+				&__item {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-bottom: 3em;
+
+					&-icon {
+						padding: 0.5em;
+						width: 50px;
+						height: 50px;
+						background-color: $theme-dark;
+					}
+
+					&-title {
+						margin-top: 0.5em;
+						font-family: "Titillium Web", sans-serif;
+						font-weight: 700;
+						font-size: 1.8rem;
+						color: $darker;
+					}
+
+					&-description {
+						margin-top: 0.4em;
+						padding: 0 2em;
+						font-family: "Poppins", sans-serif;
+						font-size: 1.4rem;
+						color: $dark;
+						text-align: center;
+					}
+
+					&--last {
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
 }
 
 @keyframes navItemsAnimation {
