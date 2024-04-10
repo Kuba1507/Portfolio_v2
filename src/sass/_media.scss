@@ -146,6 +146,24 @@
 				}
 			}
 		}
+
+		.faq {
+			.wrapper {
+				.faq-col {
+					&__question {
+						&-content {
+							font-size: 1.9rem;
+						}
+					}
+
+					&__answer {
+						&-content {
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -297,6 +315,32 @@
 				.features-box {
 					&__item {
 						width: 300px;
+					}
+				}
+			}
+		}
+
+		.faq {
+			.section-title {
+				padding-right: 4em;
+				text-align: left;
+			}
+
+			.wrapper {
+				display: flex;
+
+				.title-col {
+					flex: 1;
+				}
+
+				.faq-col {
+					margin: 0;
+					flex: 2;
+
+					.faq-container {
+						&--first {
+							margin-top: 0.5em;
+						}
 					}
 				}
 			}
