@@ -580,10 +580,21 @@ body {
 					margin-top: 3em;
 					width: 55px;
 					height: 55px;
-					background-image: url("../img/example.jpg");
 					background-position: center;
 					background-size: cover;
 					border-radius: 50%;
+
+					&--first {
+						background-image: url("../img/avatar_2.webp");
+					}
+
+					&--second {
+						background-image: url("../img/avatar_3.webp");
+					}
+
+					&--third {
+						background-image: url("../img/avatar_1.webp");
+					}
 
 					&-name {
 						margin-top: 0.5em;
