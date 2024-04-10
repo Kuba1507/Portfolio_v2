@@ -745,6 +745,51 @@ body {
 						}
 					}
 				}
+
+				.right-col {
+					margin-top: 1em;
+
+					form {
+						display: flex;
+						flex-direction: column;
+					}
+
+					.form-box {
+						// margin-bottom: 0.25em;
+						font-family: "Poppins", sans-serif;
+
+						input,
+						textarea {
+							margin: 0.35em 0;
+							padding: 0.8em;
+							width: 100%;
+							font-size: 1.4rem;
+							border: 1px solid rgb(197, 197, 197);
+							border-radius: 5px;
+						}
+
+						input::placeholder,
+						textarea::placeholder {
+							font-family: "Poppins", sans-serif;
+						}
+
+						.error-text {
+							display: none;
+							margin: 2px 5px;
+							font-size: 1.5rem;
+							color: $dark;
+						}
+					}
+
+					.form-box.error input {
+						border: 1px solid rgb(34, 60, 133);
+						background-color: rgba(255, 255, 255, 0.4);
+					}
+
+					.form-box.error .error-text {
+						display: block;
+					}
+				}
 			}
 		}
 	}

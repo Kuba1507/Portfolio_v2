@@ -374,7 +374,6 @@
 
                 <div class="contact-box">
                     <div class="left-col">
-
                         <div class="left-col__element">
                             <img src="dist/img/location.png" class="left-col__element-icon"></img>
                             <div class="left-col__element-box">
@@ -398,10 +397,46 @@
                                 <p class="left-col__element-box-description">kuba.romanski@onet.com.pl</p>
                             </div>
                         </div>
-
                     </div>
-                    <div class="right-col">
 
+                    <div class="right-col">
+                        <form action="">
+
+                            <div class="form-container">
+
+                                <div class="form-box">
+                                    <input type="text" id="name" placeholder="Podaj imię">
+                                    <p class="error-text">error</p>
+                                </div>
+                                <div class="form-box">
+                                    <input type="email" id="mail" placeholder="Podaj swój e-mail">
+                                    <p class="error-text">error</p>
+                                </div>
+
+                            </div>
+
+                            <div class="form-box">
+
+                                <input type="text" id="subject" placeholder="Wpisz temat">
+                                <p class="error-text">error</p>
+                            </div>
+
+                            <div class="form-box">
+                                <textarea cols="30" rows="10" placeholder="Treść Twojej wiadomości..."></textarea>
+                                <p class="error-text">error</p>
+                            </div>
+
+                            <div class="control-buttons">
+                                <button class="clear">Wyczyść</button>
+                                <button class="send">Wyślij</button>
+                            </div>
+
+                            <div class="popup">
+                                <p>Formularz został poprawnie wysłany!</p>
+                                <button class="close">Zamknij</button>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
