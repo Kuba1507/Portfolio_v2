@@ -646,6 +646,14 @@ body {
 					max-height: 300px;
 				}
 
+				.faq-container.active svg {
+					transform: rotate(180deg);
+				}
+
+				svg {
+					transition: transform 0.3s ease-in;
+				}
+
 				&__question {
 					display: flex;
 					justify-content: space-between;
@@ -662,6 +670,7 @@ body {
 				&__answer {
 					max-height: 0;
 					overflow: hidden;
+					transition: max-height 0.5s ease;
 
 					&-content {
 						padding-top: 1em;
