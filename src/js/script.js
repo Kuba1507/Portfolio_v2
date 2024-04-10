@@ -5,6 +5,7 @@ const mobileNavItems = document.querySelectorAll(".mobile-nav__menu-item");
 const portfolioElements = document.querySelectorAll(
 	".portfolio-box__element-image"
 );
+const faqs = document.querySelectorAll(".faq-container");
 
 const handleNav = () => {
 	mobileNav.classList.toggle("show-mobile-nav");
@@ -60,10 +61,25 @@ function handleWebsite() {
 	}
 }
 
+const handleFaq = (event) => {
+	const clickedFaq = event.currentTarget;
+
+	faqs.forEach((faq) => {
+		if (faq !== clickedFaq) {
+			faq.classList.remove("active");
+		}
+	});
+
+	clickedFaq.classList.toggle("active");
+};
+
 burgerBtn.addEventListener("click", handleNav);
 mobileNavItems.forEach((item) => {
 	item.addEventListener("click", closeNav);
 });
 portfolioElements.forEach((element) => {
 	element.addEventListener("click", handleWebsite);
+});
+faqs.forEach((faq) => {
+	faq.addEventListener("click", handleFaq);
 });
