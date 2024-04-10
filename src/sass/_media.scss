@@ -121,6 +121,31 @@
 				}
 			}
 		}
+
+		.comments {
+			.wrapper {
+				.swiper {
+					padding: 0;
+				}
+
+				.swiper-slide {
+					&__content {
+						font-size: 1.9rem;
+					}
+
+					&__author {
+						&-name {
+							font-size: 1.8rem;
+						}
+					}
+				}
+
+				.swiper-button-next,
+				.swiper-button-prev {
+					display: block;
+				}
+			}
+		}
 	}
 }
 

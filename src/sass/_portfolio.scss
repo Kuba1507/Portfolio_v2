@@ -607,12 +607,10 @@ body {
 				}
 			}
 
-			.swiper-button-next {
-				display: none;
-			}
-
+			.swiper-button-next,
 			.swiper-button-prev {
 				display: none;
+				color: $theme-dark;
 			}
 
 			.swiper-pagination-bullet {

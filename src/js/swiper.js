@@ -9,4 +9,7 @@ var swiper = new Swiper(".mySwiper", {
 	},
 	mousewheel: true,
 	keyboard: true,
+	autoplay: {
+		delay: 3000,
+	},
 });
