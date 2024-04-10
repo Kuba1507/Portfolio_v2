@@ -643,7 +643,7 @@ body {
 				}
 
 				.faq-container.active .faq-col__answer {
-					max-height: 300px;
+					max-height: 450px;
 				}
 
 				.faq-container.active svg {
@@ -651,6 +651,7 @@ body {
 				}
 
 				svg {
+					max-width: 30px;
 					transition: transform 0.3s ease-in;
 				}
 
