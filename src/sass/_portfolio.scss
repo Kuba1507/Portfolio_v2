@@ -854,6 +854,62 @@ body {
 		}
 	}
 }
+
+.footer {
+	background-color: $footer-bg;
+	&__mobile {
+		padding: 1em;
+		background-color: $footer-bg;
+
+		&-upper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&-logo {
+				background-color: $footer-bg;
+				font-family: "Titillium Web", sans-serif;
+				font-size: 1.6rem;
+				font-weight: 600;
+				color: $navbar-bg;
+				text-decoration: none;
+				transition: color 0.3s;
+
+				&:hover {
+					color: rgb(234, 234, 234);
+				}
+			}
+
+			&-socials {
+				display: flex;
+
+				&-btn {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 0 0.5em;
+					width: 38px;
+					height: 38px;
+					background-color: $theme-dark;
+					border: none;
+					border-radius: 50%;
+					transition: background-color 0.3s;
+					cursor: pointer;
+
+					&:hover {
+						background-color: $theme-light;
+					}
+
+					&-icon {
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
 @keyframes navItemsAnimation {
 	from {
 		transform: translateY(330%);
