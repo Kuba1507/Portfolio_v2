@@ -6,6 +6,13 @@ const portfolioElements = document.querySelectorAll(
 	".portfolio-box__element-image"
 );
 const faqs = document.querySelectorAll(".faq-container");
+const username = document.querySelector("#name");
+const email = document.querySelector("#mail");
+const subject = document.querySelector("#subject");
+const messege = document.querySelector("#messege");
+const sendBtn = document.querySelector(".send");
+const clearBtn = document.querySelector(".clear");
+const popup = document.querySelector(".popup");
 
 const handleNav = () => {
 	mobileNav.classList.toggle("show-mobile-nav");
@@ -82,4 +89,11 @@ portfolioElements.forEach((element) => {
 });
 faqs.forEach((faq) => {
 	faq.addEventListener("click", handleFaq);
+});
+clearBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+
+	[username, email, subject, messege].forEach((el) => {
+		el.value = "";
+	});
 });
