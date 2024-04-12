@@ -717,8 +717,8 @@ body {
 
 						&-icon {
 							margin-bottom: 0.5em;
-							width: 40px;
-							height: 40px;
+							width: 35px;
+							height: 35px;
 						}
 
 						&-box {
@@ -790,10 +790,6 @@ body {
 					border-radius: 50%;
 					transition: background-color 0.3s;
 					cursor: pointer;
-
-					&:hover {
-						background-color: $theme-light;
-					}
 
 					&-icon {
 						width: 30px;
