@@ -80,6 +80,28 @@ const handleFaq = (event) => {
 	clickedFaq.classList.toggle("active");
 };
 
+const showError = (input, messege) => {
+	const formBox = input.parentElement;
+	const errorMsg = formBox.querySelector(".error-text");
+
+	formBox.classList.add("error");
+};
+
+const clearError = (input) => {
+	const formBox = input.parentElement;
+	formBox.classList.remove("error");
+};
+
+const checkForm = (input) => {
+	input.forEach((el) => {
+		if (el.value === "") {
+			showError(el, el.placeholder);
+		} else {
+			clearError(el);
+		}
+	});
+};
+
 burgerBtn.addEventListener("click", handleNav);
 mobileNavItems.forEach((item) => {
 	item.addEventListener("click", closeNav);
@@ -96,4 +118,9 @@ clearBtn.addEventListener("click", (e) => {
 	[username, email, subject, messege].forEach((el) => {
 		el.value = "";
 	});
+});
+sendBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+
+	checkForm([username, email, subject, messege]);
 });
