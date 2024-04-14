@@ -190,15 +190,12 @@ body {
 		.wrapper {
 			display: flex;
 			flex-direction: column;
-			// height: 800px;
-			// background-color: aqua;
 
 			.left-side {
 				display: flex;
 				align-items: flex-end;
 				justify-content: center;
 				flex: 1;
-				// background-color: aquamarine;
 
 				&__trapezoid {
 					height: 230px;
@@ -227,7 +224,6 @@ body {
 				align-items: center;
 				margin-top: 1em;
 				flex: 1;
-				// background-color: bisque;
 
 				.main-heading {
 					margin-top: 0.4em;
