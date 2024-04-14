@@ -674,7 +674,7 @@ body {
 				&__answer {
 					max-height: 0;
 					overflow: hidden;
-					transition: max-height 0.5s ease;
+					transition: max-height 0.5s ease-in;
 
 					&-content {
 						padding-top: 1em;
@@ -705,7 +705,6 @@ body {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
-					// justify-content: flex-start;
 
 					&__element {
 						display: flex;
