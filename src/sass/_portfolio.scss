@@ -350,7 +350,6 @@ body {
 	.about-me {
 		display: flex;
 		background-color: $navbar-bg;
-		// background-color: red;
 
 		.wrapper {
 			display: flex;
@@ -359,14 +358,15 @@ body {
 			.photo-box {
 				display: flex;
 				justify-content: center;
-				// background-color: blue;
 
 				&__image {
 					width: 200px;
 					height: 200px;
-					background-image: url('../img/example.jpg');
+					background-image: url('../img/prof-removebg-preview.webp');
+					background-color: $navbar-bg;
 					background-size: cover;
 					background-position: center;
+					border: 2px solid $theme-dark;
 					border-radius: 50%;
 				}
 			}
