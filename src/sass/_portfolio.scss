@@ -10,7 +10,7 @@
 
 html {
 	font-size: 62.5%;
-	scroll-padding-top: 80px;
+	scroll-padding-top: 50px;
 	scroll-behavior: smooth;
 }
 
@@ -47,7 +47,7 @@ body {
 			height: 60px;
 			border-radius: 32px;
 			backdrop-filter: blur(6px);
-			background-color: rgba(245, 245, 245, 0.8);
+			background-color: #f5f5f5cc;
 
 			&__logo {
 				padding: 0.75em 0.5em;

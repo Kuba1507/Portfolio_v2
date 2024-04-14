@@ -1,6 +1,7 @@
 const body = document.querySelector('body')
 const burgerBtn = document.querySelector('.hamburger')
 const mobileNav = document.querySelector('.mobile-nav')
+const navbar = document.querySelector('.navbar')
 const mobileNavItems = document.querySelectorAll('.mobile-nav__menu-item')
 const portfolioElements = document.querySelectorAll('.portfolio-box__element-image')
 const faqs = document.querySelectorAll('.faq-container')
@@ -78,6 +79,23 @@ const handleFaq = event => {
 	clickedFaq.classList.toggle('active')
 }
 
+const changeNavbarColor = () => {
+	const aboutMeSection = document.querySelector('.about-me')
+	const distaneFromTop = aboutMeSection.getBoundingClientRect().top
+
+	if (distaneFromTop <= 20) {
+		navbar.style.backgroundColor = '#fdfdfdcc'
+	} else {
+		navbar.style.backgroundColor = '#f5f5f5cc'
+	}
+
+	const bottomOfAboutMe = aboutMeSection.offsetTop + aboutMeSection.offsetHeight
+
+	if (window.scrollY > bottomOfAboutMe) {
+		navbar.style.backgroundColor = '#f5f5f5cc'
+	}
+}
+
 burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
@@ -88,6 +106,7 @@ portfolioElements.forEach(element => {
 faqs.forEach(faq => {
 	faq.addEventListener('click', handleFaq)
 })
+window.addEventListener('scroll', changeNavbarColor)
 ctaButton.addEventListener('click', function () {
 	const contactSection = document.querySelector('.contact')
 	const distanceToTop = contactSection.offsetTop
