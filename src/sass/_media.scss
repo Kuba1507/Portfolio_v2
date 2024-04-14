@@ -386,6 +386,10 @@
 	}
 
 	.footer {
+		&__desktop {
+			display: flex;
+		}
+
 		&__mobile {
 			&-links {
 				display: block;

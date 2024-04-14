@@ -750,6 +750,54 @@ body {
 .footer {
 	background-color: $footer-bg;
 
+	&__desktop {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 4em 0.5em 1em 0.5em;
+
+		&-heading,
+		&-description {
+			font-family: 'Poppins', sans-serif;
+			color: $bg-color;
+		}
+
+		&-heading {
+			font-weight: 700;
+			font-size: 3.25rem;
+		}
+
+		&-description {
+			margin-top: 0.5em;
+			max-width: 780px;
+			text-align: center;
+		}
+
+		&-cta-button {
+			margin-top: 2em;
+			padding: 0.5em 1.6em;
+			font-family: 'Poppins', sans-serif;
+			font-size: 1.9rem;
+			border: none;
+			border-radius: 32px;
+			transition: background-color 0.3s, color 0.3s;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $theme-dark;
+				color: $bg-color;
+			}
+		}
+
+		&-underline {
+			margin-top: 3em;
+			height: 2px;
+			width: 100%;
+			background-color: $bg-color;
+		}
+	}
+
 	&__mobile {
 		display: flex;
 		justify-content: space-between;
