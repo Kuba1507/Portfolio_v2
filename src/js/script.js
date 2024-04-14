@@ -4,6 +4,7 @@ const mobileNav = document.querySelector('.mobile-nav')
 const mobileNavItems = document.querySelectorAll('.mobile-nav__menu-item')
 const portfolioElements = document.querySelectorAll('.portfolio-box__element-image')
 const faqs = document.querySelectorAll('.faq-container')
+const ctaButton = document.querySelector('.right-side__cta-button')
 const facebookBtn = document.querySelector('.facebook-btn')
 const facebookBtn2 = document.querySelector('.footer-facebook')
 const instagramBtn = document.querySelector('.instagram-btn')
@@ -86,6 +87,15 @@ portfolioElements.forEach(element => {
 })
 faqs.forEach(faq => {
 	faq.addEventListener('click', handleFaq)
+})
+ctaButton.addEventListener('click', function () {
+	const contactSection = document.querySelector('.contact')
+	const distanceToTop = contactSection.offsetTop
+
+	window.scrollTo({
+		top: distanceToTop,
+		behavior: 'smooth',
+	})
 })
 facebookBtn.addEventListener('click', function () {
 	window.location.href = 'https://www.facebook.com/kuba.romanski.54/'
