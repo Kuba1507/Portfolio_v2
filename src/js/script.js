@@ -81,17 +81,33 @@ const handleFaq = event => {
 
 const changeNavbarColor = () => {
 	const aboutMeSection = document.querySelector('.about-me')
-	const distaneFromTop = aboutMeSection.getBoundingClientRect().top
+	const benefitsSection = document.querySelector('.benefits')
+	const portfolioSection = document.querySelector('.portfolio')
+	const featuresSection = document.querySelector('.features')
+	const commentsSection = document.querySelector('.comments')
+	const faqSection = document.querySelector('.faq')
 
-	if (distaneFromTop <= 20) {
-		navbar.style.backgroundColor = '#fdfdfdcc'
-	} else {
-		navbar.style.backgroundColor = '#f5f5f5cc'
-	}
+	const sections = [
+		{ element: aboutMeSection, color: '#fdfdfdcc' },
+		{ element: benefitsSection, color: '#f5f5f5cc' },
+		{ element: portfolioSection, color: '#fdfdfdcc' },
+		{ element: featuresSection, color: '#f5f5f5cc' },
+		{ element: commentsSection, color: '#fdfdfdcc' },
+		{ element: faqSection, color: '#f5f5f5cc' },
+	]
 
-	const bottomOfAboutMe = aboutMeSection.offsetTop + aboutMeSection.offsetHeight
+	let isNearAnySection = false
 
-	if (window.scrollY > bottomOfAboutMe) {
+	sections.forEach(section => {
+		const distanceFromTop = section.element.getBoundingClientRect().top
+
+		if (distanceFromTop <= 20) {
+			navbar.style.backgroundColor = section.color
+			isNearAnySection = true
+		}
+	})
+
+	if (!isNearAnySection) {
 		navbar.style.backgroundColor = '#f5f5f5cc'
 	}
 }
