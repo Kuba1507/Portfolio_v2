@@ -8,6 +8,8 @@ const facebookBtn = document.querySelector('.facebook-btn')
 const facebookBtn2 = document.querySelector('.footer-facebook')
 const instagramBtn = document.querySelector('.instagram-btn')
 const instagramBtn2 = document.querySelector('.footer-instagram')
+const callBtn = document.querySelector('.navbar__call-button')
+const callBtn2 = document.querySelector('.footer__desktop-cta-button')
 
 const handleNav = () => {
 	mobileNav.classList.toggle('show-mobile-nav')
@@ -98,4 +100,10 @@ facebookBtn2.addEventListener('click', function () {
 instagramBtn2.addEventListener('click', function () {
 	window.location.href =
 		'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fkubaromanskiwebdev%3Figsh%3DMmFlaWl3cjE3NHNj%26fbclid%3DIwAR2ICSEfQ2bMV_vRU5JS15-szZw0r6pitkrhuplOFVXMrf1_03l-5gMi1zE_aem_AWuKqfVsm-RygaX6dD-lC51Y_91K_olP6x-UpbeBmID54XpiLpcK-jelPCVKzix2uI5fp0rypkMN_62P7hUaSbg7&h=AT2cb7UskGgXV_U1cMmLOTQNzyYO7O52mbF37k3o9qjTiKwwHFGhNwv0gcbvit3VGmnIxrDWTlvTG2yl-T-mFqME3Oi6Rc3dZNqbDu0IE7SAvVyVL470CVE2hPIJnS9P-a724a5-sK992R6H3F7Ucg'
+})
+callBtn.addEventListener('click', function () {
+	window.location.href = 'tel:+48695145153'
+})
+callBtn2.addEventListener('click', function () {
+	window.location.href = 'tel:+48695145153'
 })
