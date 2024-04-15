@@ -1,4 +1,4 @@
-@use 'colors' as *;
+@use "colors" as *;
 
 *,
 *::before,
@@ -51,7 +51,7 @@ body {
 
 			&__logo {
 				padding: 0.75em 0.5em;
-				font-family: 'Titillium Web', sans-serif;
+				font-family: "Titillium Web", sans-serif;
 				font-size: 1.8rem;
 				font-weight: 700;
 				color: $dark;
@@ -69,7 +69,7 @@ body {
 				&-item {
 					display: inline;
 					padding: 0.25em 0.75em;
-					font-family: 'Poppins', sans-serif;
+					font-family: "Poppins", sans-serif;
 					font-size: 1.7rem;
 					color: $dark;
 					text-decoration: none;
@@ -84,7 +84,7 @@ body {
 			&__call-button {
 				display: none;
 				padding: 0.4em 1.4em;
-				font-family: 'Poppins', sans-serif;
+				font-family: "Poppins", sans-serif;
 				font-size: 1.6rem;
 				color: $bg-color;
 				background-color: $theme-dark;
@@ -120,7 +120,7 @@ body {
 			&-item {
 				margin: 1em 0;
 				padding: 1em;
-				font-family: 'Poppins', sans-serif;
+				font-family: "Poppins", sans-serif;
 				font-size: 2rem;
 
 				&-link {
@@ -156,7 +156,7 @@ body {
 	}
 
 	.section-title {
-		font-family: 'Titillium Web', sans-serif;
+		font-family: "Titillium Web", sans-serif;
 		font-weight: 600;
 		font-size: 2.6rem;
 		color: $darker;
@@ -170,7 +170,7 @@ body {
 	.section-description {
 		margin-top: 0.5em;
 		padding: 0 2em;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		font-size: 1.4rem;
 		color: $dark;
 		text-align: center;
@@ -179,7 +179,7 @@ body {
 	.section-tip {
 		margin-top: 0.75em;
 		width: 100%;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		font-size: 1.2rem;
 		text-align: center;
 	}
@@ -228,7 +228,7 @@ body {
 				.main-heading {
 					margin-top: 0.4em;
 					font-size: 3.8rem;
-					font-family: 'Titillium Web', sans-serif;
+					font-family: "Titillium Web", sans-serif;
 					font-weight: 900;
 					color: transparent;
 					-webkit-text-stroke: 1px #203c61;
@@ -252,7 +252,7 @@ body {
 				.main-description {
 					margin-top: 1em;
 					padding: 0 2em;
-					font-family: 'Poppins', sans-serif;
+					font-family: "Poppins", sans-serif;
 					font-size: 1.4rem;
 					color: $dark;
 					text-align: center;
@@ -263,7 +263,7 @@ body {
 					display: flex;
 					justify-content: center;
 					flex-wrap: wrap;
-					font-family: 'Poppins', sans-serif;
+					font-family: "Poppins", sans-serif;
 					font-size: 1.3rem;
 					color: $dark;
 					line-height: 2.25em;
@@ -323,13 +323,14 @@ body {
 					margin-top: 1.5em;
 					padding: 0.5em 0;
 					width: 90%;
-					font-family: 'Poppins', sans-serif;
+					font-family: "Poppins", sans-serif;
 					font-size: 1.8rem;
 					color: $bg-color;
 					background-color: $theme-dark;
 					border: 1px solid transparent;
 					border-radius: 25px;
-					box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+					box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+						rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 					transition: color 0.3s, background-color 0.3s, border 0.3s;
 					cursor: pointer;
 
@@ -358,7 +359,7 @@ body {
 				&__image {
 					width: 200px;
 					height: 200px;
-					background-image: url('../img/prof-removebg-preview.webp');
+					background-image: url("../img/prof-removebg-preview.webp");
 					background-color: $navbar-bg;
 					background-size: cover;
 					background-position: center;
@@ -375,7 +376,7 @@ body {
 				&__description {
 					padding: 0 2em;
 					margin-top: 1em;
-					font-family: 'Poppins', sans-serif;
+					font-family: "Poppins", sans-serif;
 					font-size: 1.5rem;
 					color: $dark;
 					text-align: center;
@@ -407,7 +408,7 @@ body {
 
 					&-title {
 						margin-top: 0.5em;
-						font-family: 'Titillium Web', sans-serif;
+						font-family: "Titillium Web", sans-serif;
 						font-weight: 700;
 						font-size: 1.9rem;
 						color: $darker;
@@ -416,7 +417,7 @@ body {
 					&-description {
 						margin-top: 0.25em;
 						padding: 0 2em;
-						font-family: 'Poppins', sans-serif;
+						font-family: "Poppins", sans-serif;
 						font-size: 1.4rem;
 						color: $dark;
 						text-align: center;
@@ -468,7 +469,8 @@ body {
 						rgba(16, 165, 160, 1) 58%,
 						rgba(35, 214, 185, 0.4822303921568627) 100%
 					);
-					box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+					box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+						rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 					overflow: hidden;
 					transition: background-color 0.4s;
 					cursor: pointer;
@@ -520,7 +522,7 @@ body {
 
 					&-title {
 						margin-top: 0.5em;
-						font-family: 'Titillium Web', sans-serif;
+						font-family: "Titillium Web", sans-serif;
 						font-weight: 700;
 						font-size: 1.8rem;
 						color: $darker;
@@ -529,7 +531,7 @@ body {
 					&-description {
 						margin-top: 0.4em;
 						padding: 0 2em;
-						font-family: 'Poppins', sans-serif;
+						font-family: "Poppins", sans-serif;
 						font-size: 1.4rem;
 						color: $dark;
 						text-align: center;
@@ -572,7 +574,7 @@ body {
 					margin-top: 1.5em;
 					padding: 0 2em;
 					max-width: 550px;
-					font-family: 'Poppins', sans-serif;
+					font-family: "Poppins", sans-serif;
 					font-size: 1.7rem;
 					color: $darker;
 					text-align: center;
@@ -587,21 +589,21 @@ body {
 					border-radius: 50%;
 
 					&--first {
-						background-image: url('../img/avatar_2.webp');
+						background-image: url("../img/avatar_2.webp");
 					}
 
 					&--second {
-						background-image: url('../img/avatar_3.webp');
+						background-image: url("../img/avatar_3.webp");
 					}
 
 					&--third {
-						background-image: url('../img/avatar_1.webp');
+						background-image: url("../img/avatar_1.webp");
 					}
 
 					&-name {
 						margin-top: 0.5em;
 						margin-bottom: 2em;
-						font-family: 'Poppins', sans-serif;
+						font-family: "Poppins", sans-serif;
 						font-size: 1.7rem;
 						text-transform: uppercase;
 						color: $dark;
@@ -637,7 +639,7 @@ body {
 				}
 
 				.faq-container.active .faq-col__answer {
-					max-height: 450px;
+					max-height: 500px;
 				}
 
 				.faq-container.active svg {
@@ -656,7 +658,7 @@ body {
 
 					&-content {
 						margin-right: 1em;
-						font-family: 'Poppins', sans-serif;
+						font-family: "Poppins", sans-serif;
 						font-size: 1.6rem;
 						color: $darker;
 						transition: color 0.3s;
@@ -674,7 +676,7 @@ body {
 
 					&-content {
 						padding-top: 1em;
-						font-family: 'Poppins', sans-serif;
+						font-family: "Poppins", sans-serif;
 						font-size: 1.5rem;
 						color: $dark;
 						line-height: 1.7;
@@ -718,14 +720,14 @@ body {
 							text-align: center;
 
 							&-title {
-								font-family: 'Titillium Web', sans-serif;
+								font-family: "Titillium Web", sans-serif;
 								font-weight: 600;
 								font-size: 1.9rem;
 								color: $bg-color;
 							}
 
 							&-description {
-								font-family: 'Poppins', sans-serif;
+								font-family: "Poppins", sans-serif;
 								font-weight: 400;
 								font-size: 1.5rem;
 								color: $bg-color;
@@ -754,7 +756,7 @@ body {
 
 		&-heading,
 		&-description {
-			font-family: 'Poppins', sans-serif;
+			font-family: "Poppins", sans-serif;
 			color: $bg-color;
 		}
 
@@ -772,7 +774,7 @@ body {
 		&-cta-button {
 			margin-top: 2em;
 			padding: 0.5em 1.6em;
-			font-family: 'Poppins', sans-serif;
+			font-family: "Poppins", sans-serif;
 			font-size: 1.9rem;
 			border: none;
 			border-radius: 32px;
@@ -803,7 +805,7 @@ body {
 
 		&-logo {
 			background-color: $footer-bg;
-			font-family: 'Titillium Web', sans-serif;
+			font-family: "Titillium Web", sans-serif;
 			font-size: 1.7rem;
 			font-weight: 600;
 			color: $navbar-bg;
@@ -820,7 +822,7 @@ body {
 
 			&-item {
 				padding: 1.5em;
-				font-family: 'Titillium Web', sans-serif;
+				font-family: "Titillium Web", sans-serif;
 				font-size: 1.8rem;
 				color: $bg-color;
 				text-decoration: none;
