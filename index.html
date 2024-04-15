@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Titillium+Web:wght@400;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/hamburger.min.css">
 </head>
@@ -21,25 +22,20 @@
 <body>
     <header class="header">
         <div class="wrapper">
-
             <div class="navbar">
                 <a href="#" class="navbar__logo">kubaWebsites.</a>
-
                 <nav class="navbar__menu">
                     <a href="#about-me" class="navbar__menu-item">O mnie</a>
                     <a href="#portfolio" class="navbar__menu-item">Portfolio</a>
                     <a href="#contact" class="navbar__menu-item">Kontakt</a>
                 </nav>
-
                 <button class="hamburger hamburger--emphatic" type="button" title="Burger Menu Button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-
                 <button class="navbar__call-button">Zadzwoń</button>
             </div>
-
         </div>
 
         <nav class="mobile-nav">
@@ -60,11 +56,11 @@
     <main class="main">
         <section class="section welcome-section">
             <div class="wrapper">
-                <div class="left-side">
+                <div class="left-side" data-aos="zoom-in">
                     <div class="left-side__trapezoid"></div>
                     <img src="dist/img/avatar.webp" alt="Awatar młodego chłopaka w bluzie" class="left-side__avatar">
                 </div>
-                <div class="right-side">
+                <div class="right-side" data-aos="zoom-in">
                     <h1 class="main-heading">Kuba <span>Romański</span></h1>
                     <p class="main-description">Jestem Web Developerem, który z pasją i zaangażowaniem stworzy najlepszą
                         dla Ciebie stronę internetową.</p>
@@ -98,10 +94,10 @@
         </section>
         <section class="section about-me" id="about-me">
             <div class="wrapper">
-                <div class="photo-box">
+                <div class="photo-box" data-aos="zoom-in" data-aos-duration="1200">
                     <div class="photo-box__image"></div>
                 </div>
-                <div class="text-box">
+                <div class="text-box" data-aos="zoom-in" data-aos-duration="1200">
                     <h2 class="section-title">Dowiedz się o mnie więcej</h2>
                     <p class="text-box__description">
                         Cześć! Jestem Kuba, mam 22 lata i mam za sobą już parę lat doświadczenia w tworzeniu stron
@@ -122,21 +118,22 @@
 
                 <div class="benefits-box">
 
-                    <div class="benefits-box__benefit">
+                    <div class="benefits-box__benefit" data-aos="fade-up" data-aos-delay="200">
                         <img src="dist/img/icon-wand.png" alt="Ikona różdżki" class="benefits-box__benefit-icon">
                         <p class="benefits-box__benefit-title">Kompletny pakiet</p>
                         <p class="benefits-box__benefit-description">Autorski design, zaprogramowanie gotowej strony,
                             zadbanie o SEO, analityki oraz wiele więcej...</p>
                     </div>
 
-                    <div class="benefits-box__benefit">
+                    <div class="benefits-box__benefit" data-aos="fade-up" data-aos-delay="500">
                         <img src="dist/img/icon-time.png" alt="Ikona zegarka" class="benefits-box__benefit-icon">
                         <p class="benefits-box__benefit-title">Szybki rezultat</p>
                         <p class="benefits-box__benefit-description">Projekt i realizacja strony w okresie maksymalnie 2
                             tygodni od momentu nawiązania współpracy!</p>
                     </div>
 
-                    <div class="benefits-box__benefit benefits-box__benefit--last">
+                    <div class="benefits-box__benefit benefits-box__benefit--last" data-aos="fade-up"
+                        data-aos-delay="800">
                         <img src="dist/img/icon-help.png" alt="Ikona pomocy" class="benefits-box__benefit-icon">
                         <p class="benefits-box__benefit-title">Pakiet instrukcji</p>
                         <p class="benefits-box__benefit-description">Chcesz wprowadzić proste zmiany na stronie
@@ -153,7 +150,7 @@
                 <h2 class="section-title">Sprawdź moje portfolio</h2>
                 <p class="section-description">Zobacz, jaką stronę mogę dla Ciebie wykonać!</p>
                 <p class="section-tip">Kliknij, aby otworzyć stronę.</p>
-                <div class="portfolio-box">
+                <div class="portfolio-box" data-aos="zoom-in-up">
                     <div class="portfolio-box__element">
                         <img src="dist/img/website_1.jpg" alt="Strona internetowa firmy Spawmar"
                             class="portfolio-box__element-image" data-url="https://spawmar-zabudowy.pl/">
@@ -187,39 +184,40 @@
                 <p class="section-description">Strona internetowa to nie tylko ładny design.</p>
 
                 <div class="features-box">
-                    <div class="features-box__item">
+                    <div class="features-box__item" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="150">
                         <img src="dist/img/file-description.svg" alt="Ikonka z tekstem" class="features-box__item-icon">
                         <p class="features-box__item-title">Dobrej jakości teksty</p>
                         <p class="features-box__item-description">Zadbam o to, aby na Twojej stronie znalazły się
                             wysokiej jakości teksty opisujące Twoją działalność.</p>
                     </div>
-                    <div class="features-box__item">
+                    <div class="features-box__item" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300">
                         <img src="dist/img/vector-bezier.svg" alt="Ikonka z liniami Beziera"
                             class="features-box__item-icon">
                         <p class="features-box__item-title">Wysokiej klasy design</p>
                         <p class="features-box__item-description">Autorski design cieszący oko Twojego potencjalnego
                             klienta.</p>
                     </div>
-                    <div class="features-box__item">
+                    <div class="features-box__item" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="450">
                         <img src="dist/img/code.svg" alt="Ikonka z symbolem kodu" class="features-box__item-icon">
                         <p class="features-box__item-title">Zaprogramowanie strony</p>
                         <p class="features-box__item-description">Szybka realizacja strony opartej na Wordpressie lub
                             napisanej w czystym kodzie.</p>
                     </div>
-                    <div class="features-box__item">
+                    <div class="features-box__item" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="600">
                         <img src="dist/img/seo.svg" alt="Ikonka z symbolem SEO" class="features-box__item-icon">
                         <p class="features-box__item-title">Podstawowe SEO</p>
                         <p class="features-box__item-description">Twoja strona będzie spełniała podstawowe wymogi SEO i
                             będzie gotowa do dalszego pozycjonowania.</p>
                     </div>
-                    <div class="features-box__item">
+                    <div class="features-box__item" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="750">
                         <img src="dist/img/article.svg" alt="Ikonka z symbolem artykułu"
                             class="features-box__item-icon">
                         <p class="features-box__item-title">Utworzenie bloga</p>
                         <p class="features-box__item-description">Potrzebujesz bloga? Chcesz go prowadzić samodzielnie?
                             Żaden problem!</p>
                     </div>
-                    <div class="features-box__item features-box__item--last">
+                    <div class="features-box__item features-box__item--last" data-aos="flip-down"
+                        data-aos-duration="1500" data-aos-delay="900">
                         <img src="dist/img/messages.svg" alt="Ikonka czatu" class="features-box__item-icon">
                         <p class="features-box__item-title">Darmowe wsparcie</p>
                         <p class="features-box__item-description">Jeśli na Twojej stronie pojawi się jakikolwiek problem
@@ -262,10 +260,10 @@
         </section>
         <section class="section faq">
             <div class="wrapper">
-                <div class="title-col">
+                <div class="title-col" data-aos="zoom-in-up">
                     <h2 class="section-title">Najczęściej zadawane <span>pytania</span></h2>
                 </div>
-                <div class="faq-col">
+                <div class="faq-col" data-aos="zoom-in-up" data-aos-delay="400">
                     <div class="faq-container faq-container--first">
                         <div class="faq-col__question">
                             <h3 class="faq-col__question-content">W jaki sposób możemy zacząć współpracę?</h3>
@@ -405,8 +403,11 @@
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__desktop">
-                <p class="footer__desktop-heading">Nadal nie jesteś pewny?</p>
-                <p class="footer__desktop-description">Umówmy się na 15 minutową rozmowę, podczas której powiem Ci jak
+                <p class="footer__desktop-heading" data-aos="zoom-in-right" data-aos-duration="1200">Nadal nie jesteś
+                    pewny?</p>
+                <p class="footer__desktop-description" data-aos="zoom-in-right" data-aos-duration="1200"
+                    data-aos-delay="300">Umówmy się na 15 minutową rozmowę,
+                    podczas której powiem Ci jak
                     wiele korzyści niesie ze sobą w
                     obecnych czasach posiadanie własnej strony internetowej. Potem podejmiesz decyzję.</p>
                 <button class="footer__desktop-cta-button">Zadzwoń</button>
@@ -434,7 +435,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="dist/js/swiper.min.js"></script>
+    <script src="dist/js/aos.min.js"></script>
     <script src="dist/js/script.min.js"></script>
 </body>
 
