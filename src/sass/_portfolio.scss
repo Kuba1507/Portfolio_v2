@@ -863,6 +863,57 @@ body {
 	}
 }
 
+.hide {
+	display: none;
+}
+
+.cookie-box {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	padding: 1.5em;
+	width: 100%;
+	background-color: #fff;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	// opacity: 0;
+	// transform: translateY(100%);
+	animation: show-cookies 0.5s 0.5s forwards;
+	z-index: 999;
+
+	&__description {
+		margin-bottom: 0.25em;
+	}
+
+	&__privacy {
+		margin-bottom: 0.25em;
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: $theme-dark;
+		cursor: pointer;
+	}
+
+	&__btn {
+		margin-top: 1.25em;
+		font-family: "Poppins", sans-serif;
+		padding: 0.6em;
+		font-size: 1.5rem;
+		border-radius: 8px;
+		border: 1px solid transparent;
+		background-color: $theme-light;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid $theme-dark;
+			background-color: $bg-color;
+			color: $theme-dark;
+		}
+	}
+}
+
 @keyframes navItemsAnimation {
 	from {
 		transform: translateY(330%);

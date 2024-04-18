@@ -398,6 +398,14 @@
 			}
 		}
 	}
+
+	.cookie-box {
+		align-items: center;
+
+		&__btn {
+			width: 500px;
+		}
+	}
 }
 
 @media (min-width: 1920px) {
