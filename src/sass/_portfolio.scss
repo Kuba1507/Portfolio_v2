@@ -863,10 +863,6 @@ body {
 	}
 }
 
-.hide {
-	display: none;
-}
-
 .cookie-box {
 	position: fixed;
 	display: flex;
@@ -879,8 +875,8 @@ body {
 	text-align: center;
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
 		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-	// opacity: 0;
-	// transform: translateY(100%);
+	opacity: 0;
+	transform: translateY(100%);
 	animation: show-cookies 0.5s 0.5s forwards;
 	z-index: 999;
 
@@ -914,12 +910,23 @@ body {
 	}
 }
 
+.hide {
+	display: none;
+}
+
 @keyframes navItemsAnimation {
 	from {
 		transform: translateY(330%);
 	}
 
 	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes show-cookies {
+	to {
+		opacity: 1;
 		transform: translateY(0);
 	}
 }

@@ -116,7 +116,17 @@ const changeNavbarColor = () => {
 	}
 };
 
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem("cookie");
+
+	if (cookieEaten) {
+		cookieBox.classList.add("hide");
+	}
+};
+
 const handleCookieBox = () => {
+	localStorage.setItem("cookie", "true");
+
 	cookieBox.classList.add("hide");
 };
 
@@ -160,3 +170,4 @@ callBtn.addEventListener("click", function () {
 callBtn2.addEventListener("click", function () {
 	window.location.href = "tel:+48695145153";
 });
+cookieBtn.addEventListener("click", handleCookieBox);
