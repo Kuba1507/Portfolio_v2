@@ -1,5 +1,6 @@
 RewriteEngine on
 
-# Przekierowanie żądań z www.kubaromanski.pl na kubaromanski.pl z uwzględnieniem HTTPS
 RewriteCond %{HTTP_HOST} ^www\.kubaromanski\.pl$ [NC] 
 RewriteRule ^(.*)$ https://kubaromanski.pl/$1 [R=301,L]
+
+ErrorDocument 404 404.html

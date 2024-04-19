@@ -182,6 +182,16 @@
 				}
 			}
 		}
+
+		.error-404 {
+			&__main {
+				font-size: 5rem;
+			}
+
+			&__sub {
+				font-size: 3rem;
+			}
+		}
 	}
 
 	.footer {
@@ -382,6 +392,18 @@
 
 		.privacy-policy {
 			padding-top: 8em;
+		}
+
+		.error-404 {
+			height: 60vh;
+
+			&__main {
+				font-size: 5rem;
+			}
+
+			&__sub {
+				font-size: 3rem;
+			}
 		}
 	}
 

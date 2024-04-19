@@ -768,6 +768,28 @@ body {
 			}
 		}
 	}
+
+	.error-404 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 90vh;
+
+		&__main,
+		&__sub {
+			font-family: "Titillium Web", sans-serif;
+			text-align: center;
+		}
+
+		&__main {
+			font-size: 3rem;
+		}
+
+		&__sub {
+			font-size: 2rem;
+		}
+	}
 }
 
 .footer {
@@ -887,6 +909,12 @@ body {
 			}
 		}
 	}
+}
+
+.footer-subsite {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .cookie-box {
