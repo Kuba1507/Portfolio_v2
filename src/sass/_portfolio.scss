@@ -754,9 +754,10 @@ body {
 		}
 
 		&__box {
-			margin-top: 1em;
+			padding-bottom: 2em;
 
 			&-heading {
+				margin-top: 1em;
 				font-family: "Poppins", sans-serif;
 				font-size: 2.2rem;
 				color: $darker;
@@ -888,12 +889,6 @@ body {
 			}
 		}
 	}
-}
-
-.footer-subsite {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
 }
 
 .cookie-box {
