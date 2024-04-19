@@ -1,6 +1,10 @@
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} ^www\.kubaromanski\.pl$ [NC] 
-RewriteRule ^(.*)$ https://kubaromanski.pl/$1 [R=301,L]
+# Przekierowanie domeny
 
-ErrorDocument 404 404.html
+RewriteCond %{SERVER_PORT} !^443$ [OR]
+RewriteCond %{HTTP_HOST} !^kubaromanski\.pl$ [NC] 
+RewriteRule ^(.*)$ https://kubaromanski\.pl/$1 [R=301,L]
+
+# Wlasne strony bledow
+ErrorDocument 404 /404.html
